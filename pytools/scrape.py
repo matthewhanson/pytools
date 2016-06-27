@@ -40,7 +40,7 @@ def list_dirs(url):
     dirs = []
     for name, date, size in files:
         if name.endswith('/'):
-            dirs += [name]
+                dirs += [name[:-1]]
     return dirs
 
 
